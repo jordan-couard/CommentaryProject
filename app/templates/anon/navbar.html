@@ -1,0 +1,21 @@
+<nav class="navbar navbar-inverse" role="navigation" ng-controller="NavbarController">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active"><a id="btnHome" ui-sref="anon.home"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li ui-sref-active="active"><a ui-sref="anon.login" ng-show="auth.isAuthenticated()" ><span class="glyphicon glyphicon-log-out" style="color:#F123B3"></span>Login</a></li>
+                <li ui-sref-active="active"><a ui-sref="anon.register" ng-show="auth.isAuthenticated()"  ><span class="glyphicon glyphicon-time" style="color:#F123B3"></span>Register</a></li>
+            </ul>
+            <h1 id="navB">Suivi de Formation</h1>
+        </div>
+    </div>
+</nav>

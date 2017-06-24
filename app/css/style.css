@@ -1,0 +1,77 @@
+body{
+  position: relative;
+}
+#btnHome {
+    background: #323232;
+    color: lightgrey;
+}
+
+.glyphicon {
+    font-size: 3em;
+}
+
+#navB {
+    text-align: center;
+    color: lightgrey;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-size: 2em;
+    color: #526867;
+}
+#banner{
+    margin-bottom: -10em;
+    width: 100%;
+}
+h2 {
+  color: black;
+    background-color: lightblue;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h3 {
+    color: lightblue;
+    font-style: oblique;
+    font-size: 1.8em;
+}
+
+#colLiens {
+    background-color: #323232;
+    text-align: center;
+}
+
+#colLiens a {
+    color: #323232;
+}
+
+p {
+    text-align: center;
+    color: #323232;
+}
+
+.col-xs-3 {
+    border-radius: 111px 0px 111px 0px;
+    -moz-border-radius: 111px 0px 111px 0px;
+    -webkit-border-radius: 111px 0px 111px 0px;
+    border: 3px solid #918888;
+    margin: 2.5em;
+    padding: 2em;
+    background-color: lightblue;
+    color: #002d64;
+    -webkit-box-shadow: 10px 24px 32px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 24px 32px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 24px 32px -4px rgba(0,0,0,0.75);
+}
+h4{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  color: grey;
+}
+.contenu{
+  text-align: justify;
+}

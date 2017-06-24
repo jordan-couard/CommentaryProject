@@ -1,0 +1,52 @@
+<img id="banner" src="http://archive.is/kzxNU/0e923c62c9950d267ce8fc4c465057b3688e2e45.jpg" alt="">
+<h2>Bienvenue sur mon Site Web</h2>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="colLiens" class="col-xs-2">
+            <ul class="list-group">
+                <h3>Liste de liens</h3>
+                <li class="list-group-item"><a href="https://leekwars.com/" target="_blank">LeekWars</a></li>
+                <li class="list-group-item"><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                <li class="list-group-item"><a href="https://www.youtube.com/user/grafikarttv" target="_blank">Grafikart</a></li>
+                <li class="list-group-item"><a href="https://angularjs.org/" target="_blank">AngularJS</a></li>
+                <li class="list-group-item"><a href="https://developer.mozilla.org/fr/" target="_blank">MDN</a></li>
+                <li class="list-group-item"><a href="https://www.codewars.com/" target="_blank">CodeWars</a></li>
+            </ul>
+        </div>
+
+        <div id="content" class="col-offset-1 col-xs-9">
+            <p>
+            </p>
+            <div class="container">
+                <form>
+                    <textarea ng-model="comment" rows="8" cols="80" placeholder="Ajouter votre commentaire!"></textarea><br>
+                    <input placeholder="Auteur" ng-model="user"><br>
+                    <input ng-model="sujet" placeholder="Sujet">
+                    <button type="submit" ng-click="addCommentaire()">Add</button>
+                </form>
+            </div>
+
+            <div class="col-xs-3" ng-repeat="commentaire in commentaires track by $index">
+                <div class="auteur">
+                    <h4>Poster par: {{ commentaire.user }}</h4>
+                </div>
+                <div class="sujet">
+                    <h4>Sujet: {{ commentaire.sujet }}</h4>
+                </div>
+                <div class="contenu">
+                    {{ commentaire.comment }}
+                </div>
+                <div class="date">
+                    <h6> {{ commentaire.date | date:"dd/MM/yyyy 'at' h:mma" }} </h6>
+                </div>
+                <button ng-click="delete($index, commentaire)">Delete</button>
+                <!-- <button ng-click="edit($index, comment)">Edit <input></button> -->
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
